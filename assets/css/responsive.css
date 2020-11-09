@@ -1,0 +1,95 @@
+ 
+@media all and (min-width: 767px){
+	.menu ul{
+		display: flex !important;
+	}
+}
+
+@media all and (max-width: 767px){
+	.menu ul{ 
+		flex-direction: column;
+		margin-top: 2rem;
+		display: none;
+	}
+	.logo {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav-icon{
+		display: block;
+	} 
+	.menu ul li a { 
+		 border-bottom:none; 
+	}
+	.menu .nav-pills .nav-link.active, .nav-pills .show > .nav-link { 
+		border-bottom: none;
+	}
+	.banner h1 {
+		font-size: 4rem;  
+	}
+	.banner h3 {
+		font-size: 1.5rem; 
+	}
+	.banner a { 
+		font-size: 1.5rem; 
+	}
+	.contact h1, .testi h1 {
+		font-size: 2.8rem; 
+	}
+	.testi p {
+		font-size: 1.4rem; 
+	}
+	.post-btn-2 a {
+		font-size: 1.4rem; 
+	}
+	.footer-right p, .footer-left p {
+		font-size: 1.6rem; 
+	}
+	.footer-icon i {
+		font-size: 3rem;
+		width: 6rem;
+		height: 6rem;
+		line-height: 5rem; 
+	}
+	.post-area .row{
+		flex-direction: column;
+	}
+	.post-area .col-md-6 { 
+		width: 100%;
+	}
+	.testmonials-area .row{
+		flex-direction: column;
+	}
+	.testmonials-area .col-md-4 { 
+		width: 80%;
+		margin: auto;
+	}
+}
+
+
+@media all and (max-width: 540px){
+	.banner {
+		padding: 13rem 0 5rem 0;
+	}
+	.banner a { 
+		transform: translateY(7rem); 
+	}
+	.banner h1 {
+		font-size: 3rem; 
+	}
+	.banner h3 {
+		font-size: 1.3rem;
+		margin-top: 1rem;
+	}
+}
+
+@media all and (max-width: 410px){
+	.banner h1 {
+		font-size: 2rem; 
+	}
+}
+@media all and (max-width: 320px){ 
+	.testi-icon i {
+		font-size: 4rem; 
+	}
+}

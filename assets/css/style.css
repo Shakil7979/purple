@@ -1,0 +1,426 @@
+
+/*font-family: 'Rokkitt', serif; */  
+/*font-family: 'Quicksand', sans-serif;*/ 
+   /*********************************/
+  /*********1.DOWNLOAD FONTS********/
+ /********************************/
+ @font-face {
+    font-family: 'Myriad Pro';
+    src:url('../fonts/MyriadPro-BlackSemiCn.woff2') format('woff2'),
+        url('../fonts/MyriadPro-BlackSemiCn.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Cond.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+   /*********************************/
+  /***********2.GLOBAL CSS**********/
+ /********************************/ 
+body {
+    position: relative;
+    margin: 0; 
+    padding: 0;   
+    font-family: 'Myriad Pro';
+}
+html {
+    font-size: 62.5%;
+    line-height: 25px;
+    line-height: 2.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+   /*********************************/
+  /***********3.HEADER CSS*********/
+ /********************************/
+
+ .header-area {
+  background: transparent;
+  padding:4rem 0; 
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav-icon{
+  display: none;
+  font-size: 2.5rem;
+}
+.logo a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu ul li a {
+  font-size: 1.9rem;
+  color: #fff;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-bottom: 0.1rem solid transparent;
+} 
+.FixedHeader {
+  position: fixed;
+  background: #754279;
+  padding: 2rem;
+}
+.nav-link { 
+   padding: 0;  
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #9b59b6; 
+  background: none;
+  border-bottom: 0.1rem solid #fff;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+   /*********************************/
+  /***********3.BANNER CSS*********/
+ /********************************/
+
+
+.banner-area{
+  background: url('../images/banner/banner.png') no-repeat scroll 0 0 / 100% 100%;
+  position: relative;
+}
+.banner-area:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #e0b7b5;
+  opacity: 0.60;
+}
+
+ .banner {
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+.banner h1 {
+  font-size: 6rem;
+  font-family: 'Rokkitt', serif;
+  color: #fff; 
+}
+.banner hr {
+  color: #fff;
+  max-width: 70%;
+  margin: auto;
+}
+.banner h3 {
+  font-size: 2.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 2rem;
+}
+.banner {
+  padding: 23rem 0 15rem 0;
+} 
+.banner a {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: 'Rokkitt', serif;
+  background: #9B59B6;
+  border: 0.5rem solid #FFFFFF4A;
+  transform: translateY(18rem);
+  transition: 0.3s;
+}
+.banner a:hover{ 
+  background: #9B59B6D6;
+}
+
+   /*********************************/
+  /***********4.TESTMONIALS CSS****/
+ /********************************/
+
+
+ .testmonials-area {
+  padding: 12rem 0 7rem 0;
+}
+.contact,
+.testi {
+  text-align: center;
+  padding-bottom: 8rem;
+}
+.contact h1,
+.testi h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #9b59b6;
+  letter-spacing: 0.1rem;
+}
+.testi p {
+  font-size: 1.8rem;
+  color: #95a5a6;
+  letter-spacing: .07rem; 
+  max-width: 59%;
+  margin: 5rem auto 0 auto;
+}
+
+/*testi item*/
+
+.testi-item {
+  text-align: center; 
+}
+.testmonials-area .col-md-4 {
+  flex: 0 0 auto;
+  width: 28.5%;
+}
+.testi-item h3 {
+  font-weight: 700;
+  color: #9b59b6;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.testi-item p {
+  font-size: 1.5rem;
+  color: #95a5a6; 
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  line-height: 2.5rem;
+}
+.testi-icon i {
+  font-size: 5rem;
+  color: #9b59b6;
+}
+
+.border-bt {
+  border-bottom: 0.1rem solid #00000017;
+  padding-bottom: 8rem;
+}
+
+   /*********************************/
+  /***********3.POST CSS************/
+ /********************************/
+
+.post-area .col-md-6 {
+  flex: 0 0 auto;
+  width: 44%;
+}
+
+.post-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+.post-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.post-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #e0b7b585;
+  transition: 0.3s;
+}
+.post-img img{
+  width: 100%;
+  height: 100%;
+}
+ .post-hover h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+}
+.post-hover p {
+  font-size: 1.5rem;
+  color: #000;
+}
+.post-hover {
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  background: #9B59B6;
+  width: 100%;
+  padding: 1rem 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  border-top: 0.5rem solid #FFFFFF4A;
+}
+.post-icon {
+  position: absolute;
+  top: -5rem;
+  right: 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.post-icon i {
+  font-size: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  background: #9B59B6;
+  text-align: center;
+  line-height: 4rem;
+  color: #fff;
+  border: 0.5rem solid #FFFFFF4A;
+}
+.post-item:hover .post-img::after{
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+} 
+.post-item:hover .post-hover{
+  opacity: 1;
+  visibility: visible;
+  bottom: 0; 
+}
+.post-item:hover .post-icon{
+  opacity: 1;
+  visibility: visible;
+  top: 2rem; 
+  cursor: pointer;
+}
+.post-btn-2 {
+  text-align: center;
+  padding-top: 7rem;
+}
+.post-btn-2 a {
+  font-size: 2.4rem;
+  color: #fff; 
+  padding: 1rem 2rem;
+  background: #9B59B6;
+  font-family: 'Rokkitt', serif;
+  transition: 0.3s;
+}
+
+.post-btn-2 a:hover{
+  background: #9B59B6C4;
+}
+
+ 
+   /*********************************/
+  /***********4.CONTACT CSS*********/
+ /********************************/
+
+.text-area textarea{
+  height: 20rem;
+}
+.text-area textarea, .contact-input input[type="email"], .contact-input input[type="text"] {
+  width: 100%;
+  padding: 1.7rem;
+  font-size: 1.5rem;
+  background: #E4E8E8;
+  border: none;
+  margin-bottom: 2rem;
+  font-family: 'Rokkitt', serif;
+}
+
+::-moz-placeholder { 
+  color: #cecece;
+}
+.contact h1{
+  margin: 5rem 0;
+}
+.contact {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+   /*********************************/
+  /***********4.FOOTER CSS*********/
+ /********************************/
+
+
+.footer-area {
+  background: #9b59b6;
+  padding: 5rem 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-icon {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+.footer-icon::after {
+  content: "";
+  position: absolute;
+  background: #B15CD3;
+  height: 66%;
+  width: 113%;
+  top: -149%;
+  left: -4px;
+  z-index: 9;
+}
+.footer-icon i {
+  font-size: 4rem;
+  width: 6rem;
+  height: 6rem;
+  line-height: 5rem;
+  text-align: center;
+  background: #fff;
+  color: #9b59b6;
+  transform: translateY(-8.5rem);
+  position: relative;
+  z-index: 9999;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-right p,
+.footer-left p {
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+}
+.footer-right {
+  text-align: right;
+}
